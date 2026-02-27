@@ -1,0 +1,36 @@
+{
+  "name": "FirebaseAIBridge",
+  "version": "0.1.0",
+  "summary": "Firebase AI Objective-C Bridge",
+  "homepage": "https://github.com/SeanChinJunKai",
+  "license": {
+    "type": "Apache-2.0",
+    "file": "LICENSE"
+  },
+  "authors": "Sean Chin Jun Kai",
+  "source": {
+    "git": "https://github.com/SeanChinJunKai/FirebaseAIBridge.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "cocoapods_version": ">= 1.12.0",
+  "prefix_header_file": false,
+  "source_files": [
+    "FirebaseAIBridge/Sources/*.{swift,h}"
+  ],
+  "public_header_files": [
+    "FirebaseAIBridge/Sources/*.h"
+  ],
+  "swift_versions": "5.9",
+  "frameworks": "Foundation",
+  "ios": {
+    "frameworks": "UIKit"
+  },
+  "dependencies": {
+    "FirebaseAI": [],
+    "FirebaseCore": []
+  },
+  "swift_version": "5.9"
+}
