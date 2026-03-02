@@ -29,11 +29,11 @@ kotlin {
     sourceSets {
         androidMain.dependencies {
             implementation(libs.androidx.activity.compose)
-            implementation(libs.androidx.lifecycle.viewmodelCompose)
-            implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(project.dependencies.platform(libs.firebase.bom))
             implementation(libs.firebase.ai)
-
+            implementation(libs.firebase.database)
+            implementation(libs.firebase.firestore)
+            implementation(libs.compose.uiToolingPreview)
         }
         commonMain.dependencies {
             implementation(libs.firebase.ai.kmp)
@@ -42,7 +42,9 @@ kotlin {
             implementation(libs.compose.material3)
             implementation(libs.compose.ui)
             implementation(libs.compose.components.resources)
-            implementation(libs.compose.uiToolingPreview)
+            implementation(libs.compose.icons)
+            implementation(libs.androidx.lifecycle.viewmodelCompose)
+            implementation(libs.androidx.lifecycle.runtimeCompose)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -84,4 +86,3 @@ android {
 dependencies {
     debugImplementation(libs.compose.uiTooling)
 }
-
